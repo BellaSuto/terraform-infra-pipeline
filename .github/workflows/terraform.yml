@@ -7,16 +7,17 @@ on:
         type: string
         required: true
       aws-assume-role-arn:
-       type: string
+        type: string
+        required: true
       aws-region:
         type: string
-       required: true
+        required: true
       aws-statefile-s3-bucket:
-       type: string
-       required: true
-      aws-lock-dynambdb-table:
-       type: string
-       required: true
+        type: string
+        required: true
+      aws-lock-dynamodb-table:
+        type: string
+        required: true
 
 jobs:
   terraform:
